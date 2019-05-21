@@ -24,15 +24,13 @@
    margin-bottom: 0;
  }
  
- /* Example-specific styles */
- .clearfix::after {
-   content: "";
-   display: table;
-   clear: both;
- }
- 
+
  .container {
    margin: 0 2rem;
+   display: grid;
+   grid-template-columns: 2fr 6fr 4fr;
+   grid-template-rows: 2fr 5fr 3fr 2fr;
+   grid-gap: 2rem 1rem;
  }
  
  .content-area {
@@ -149,6 +147,7 @@
  }
  
  @media all and (max-width: 576px) {
+
    .main-menu, .logo {
      float: none;
      width: 100%;
@@ -166,4 +165,5 @@
    .logo, .main-menu {
      line-height: initial;
    }
+
  }
