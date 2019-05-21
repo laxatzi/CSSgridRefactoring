@@ -50,10 +50,7 @@
  }
  
  .logo {
-   width: 20%;
-   float: left;
-   height: 100%;
-   line-height: 3rem;
+     grid-area: logo;
  }
  
  .main-menu {
