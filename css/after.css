@@ -10,6 +10,7 @@
  
  body {
    background-color: #fbfbfb;
+
  }
  
  h1, h2, h3 {
@@ -29,8 +30,8 @@
    margin: 0 2rem;
    display: grid;
    grid-template-columns: 2fr 6fr 4fr;
-   grid-template-rows: 2fr 5fr 3fr 2fr;
    grid-gap: 2rem 1rem;
+   grid-template-areas: "logo menu menu";
  }
  
  .content-area {
@@ -51,16 +52,19 @@
  
  .logo {
      grid-area: logo;
+     align-self: center;
  }
  
  .main-menu {
    grid-area: menu;
-   text-align: right;
+   justify-self: end;
+   align-self: center;
  }
  
  .main-menu ul {
    margin: 0;
    padding: 0;
+   display: flex;
  }
  
  .main-menu__item {
