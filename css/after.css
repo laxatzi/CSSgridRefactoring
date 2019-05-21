@@ -36,11 +36,14 @@
                          "sponsors sponsors sponsors"
                          "footer footer footer";
 }
-
+.header {
+  display: flex;
+}
 .main-menu ul {
     display: flex;
-    justify-content: end;
-    align-items: center;
+    justify-self: end;
+    align-self: center;
+    grid-area: menu;  
 }
 
 .main-menu li {
@@ -67,7 +70,9 @@
 }
 .sponsors-wrapper {
    grid-area: sponsors;
-
+}
+.sponsors {
+  display: flex;
 }
 .footer {
    grid-area: footer;
