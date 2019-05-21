@@ -29,8 +29,12 @@
    display: grid;
    margin: 0 2rem;
    grid-template-columns: 2fr 6fr 4fr;
-   grid-template-rows: 3rem;
+   grid-template-rows: 3rem auto auto auto;
    grid-gap: 1rem;
+   grid-template-areas: "logo menu menu"
+                         "content content sidebar"
+                         "sponsors sponsors sponsors"
+                         "footer footer footer";
 }
 
 .main-menu ul {
@@ -38,6 +42,7 @@
     justify-content: end;
     align-items: center;
 }
+
 .main-menu li {
    list-style-type: none;
    margin-right: 20px;
@@ -51,6 +56,8 @@
 }
 .main-menu {
    grid-area: menu;
+   align-self: center;
+   justify-self: end;
 }
 .content-area {
     grid-area: content;
