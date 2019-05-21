@@ -54,10 +54,7 @@
  }
  
  .main-menu {
-   width: 79%;
-   float: right;
-   height: 100%;
-   line-height: 3rem;
+   grid-area: menu;
    text-align: right;
  }
  
@@ -125,8 +122,7 @@
    }
  
    .content-area {
-     width: 100%;
-     margin-bottom: 2rem;
+     grid-area: content;
    }
  
    .sidebar {
