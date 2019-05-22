@@ -75,6 +75,7 @@
 }
 .sidebar {
    grid-area: sidebar;
+   padding: 1rem;
 }
 .sponsors-wrapper {
    grid-area: sponsors;
