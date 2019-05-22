@@ -48,7 +48,6 @@
   grid-area: menu;
   align-self: center;
   justify-self: end;
-  border: 1px solid red;
 }
 .main-menu ul {
   display: flex;
