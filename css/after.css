@@ -95,7 +95,9 @@
   -moz-border-radius: .65rem;
   -ms-border-radius: .65rem;
   -o-border-radius: .65rem;
-  place-self: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer {
    grid-area: footer;
