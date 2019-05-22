@@ -83,6 +83,19 @@
 .sponsors {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: .5rem;  
+}
+.sponsor {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fff;
+  border-radius: .65rem;
+  -webkit-border-radius: .65rem;
+  -moz-border-radius: .65rem;
+  -ms-border-radius: .65rem;
+  -o-border-radius: .65rem;
+  place-self: center;
 }
 .footer {
    grid-area: footer;
