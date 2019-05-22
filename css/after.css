@@ -81,7 +81,8 @@
    grid-area: sponsors;
 }
 .sponsors {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .footer {
    grid-area: footer;
