@@ -134,23 +134,20 @@
  }
  
  @media all and (max-width: 576px) {
-
-   .main-menu, .logo {
-     float: none;
-     width: 100%;
-   }
  
-   .main-menu {
-     text-align: left;
-     margin-top: 2rem;
+   .container {
+     grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    grid-gap: 2rem 0;
+     grid-template-areas: "logo"
+                          "menu"
+                          "content"
+                          "sidebar"
+                          "sponsors"
+                          "footer"
    }
+  .main-menu {
+      justify-self: start;
+  }
  
-   .main-header {
-     height: auto;
-   }
- 
-   .logo, .main-menu {
-     line-height: initial;
-   }
-
  }
